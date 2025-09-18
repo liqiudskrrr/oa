@@ -1,0 +1,22 @@
+package edu.cdut.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+@Data
+@TableName("employee")
+public class Employee {
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
+
+    private String username;
+    private String gender;
+    private String city;
+    private String sign;
+    private Integer experience;
+    private Double score;
+    private String classify;
+    private Double wealth;
+}
